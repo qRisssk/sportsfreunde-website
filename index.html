@@ -19,7 +19,8 @@ a{text-decoration:none;color:inherit}.nav{height:76px;padding:0 4vw;display:flex
 .partners{background:#e4e1d8}.partner-grid{display:grid;grid-template-columns:1fr 1fr;gap:10vw}.partner-copy{font-size:20px;line-height:1.5;max-width:620px}.facts{border-top:1px solid #c9c6bd}.fact{padding:20px 0;border-bottom:1px solid #c9c6bd;display:flex;justify-content:space-between;gap:30px;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.fact span{color:var(--soft)}
 footer{background:#0b0b0b;color:#fff;padding:55px 4vw;display:grid;grid-template-columns:1fr auto;gap:30px}.footer-brand{font-size:22px;font-weight:800;letter-spacing:.16em}.footer-motto{margin-top:14px;color:#888;font-size:12px}.footer-right{text-align:right;font-size:9px;letter-spacing:.15em;text-transform:uppercase;line-height:2}
 .people{background:#e8e5dc}.people-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#c8c5bd;border:1px solid #c8c5bd}.person-card{min-height:440px;padding:32px;background:var(--paper);display:flex;flex-direction:column;justify-content:space-between;transition:background .25s ease,color .25s ease}.person-card:hover,.person-card:focus-visible{background:var(--black);color:#fff}.person-number,.person-status{font-size:10px;letter-spacing:.18em;text-transform:uppercase}.person-status{color:var(--soft)}.person-card:hover .person-status,.person-card:focus-visible .person-status{color:#aaa}.person-name{font-size:clamp(58px,8vw,120px);line-height:.82;letter-spacing:-.075em;font-weight:800}.person-arrow{float:right;font-size:26px;line-height:.4}
-@media(max-width:800px){.links{display:none}.section{padding:82px 6vw}.intro,.people-grid,.impact-grid,.feature,.partner-grid{grid-template-columns:1fr}.intro-copy{font-size:18px}.principles{margin-top:55px}.person-card{min-height:290px}.feature-image{min-height:480px}.feature-copy{padding:75px 7vw}.project{grid-template-columns:55px 1fr}.project-meta{grid-column:2;text-align:left}.hero-content{left:6vw;right:6vw}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(3){grid-column:1/3;border-left:0;border-top:1px solid #c8c5bd}.section-head{margin-bottom:42px}footer{grid-template-columns:1fr}.footer-right{text-align:left}}
+.profile-detail{display:grid;grid-template-columns:1fr 1fr;min-height:720px}.profile-detail.julius{background:#e4e1d8}.profile-image{min-height:620px;overflow:hidden;background:#d8d5cd}.profile-image img{display:block;width:100%;height:100%;object-fit:cover}.profile-copy{padding:100px 9vw;display:flex;flex-direction:column;justify-content:center}.profile-copy h2{font-size:clamp(58px,8vw,124px);margin:0 0 30px}.profile-copy p{font-size:20px;line-height:1.52;max-width:620px;margin:0 0 20px}.profile-facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #c8c5bd;border-bottom:1px solid #c8c5bd;margin-top:28px}.profile-fact{padding:18px 10px 18px 0;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--soft)}.profile-fact+.profile-fact{padding-left:14px;border-left:1px solid #c8c5bd}.profile-fact strong{display:block;color:var(--ink);font-size:17px;letter-spacing:-.03em;margin-top:7px}.partner-detail{display:grid;grid-template-columns:1fr 1fr;gap:8vw;margin-top:75px;padding-top:28px;border-top:1px solid #c9c6bd}.partner-detail p{font-size:19px;line-height:1.5;margin:0}.partner-photo{min-height:400px;overflow:hidden}.partner-photo img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:800px){.links{display:none}.section{padding:82px 6vw}.intro,.people-grid,.impact-grid,.feature,.partner-grid,.profile-detail,.partner-detail{grid-template-columns:1fr}.intro-copy{font-size:18px}.principles{margin-top:55px}.person-card{min-height:290px}.profile-image{min-height:480px}.profile-copy{padding:75px 7vw}.profile-copy p{font-size:18px}.partner-detail{margin-top:50px}.feature-image{min-height:480px}.feature-copy{padding:75px 7vw}.project{grid-template-columns:55px 1fr}.project-meta{grid-column:2;text-align:left}.hero-content{left:6vw;right:6vw}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(3){grid-column:1/3;border-left:0;border-top:1px solid #c8c5bd}.section-head{margin-bottom:42px}footer{grid-template-columns:1fr}.footer-right{text-align:left}}
 </style>
 </head>
 <body>
@@ -45,13 +46,23 @@ footer{background:#0b0b0b;color:#fff;padding:55px 4vw;display:grid;grid-template
 <section id="people" class="section people">
 <div class="section-head"><div class="section-no">02 / DIE FREUNDE</div><div class="section-no">DIE MENSCHEN HINTER SPORTSFREUNDE</div></div>
 <div class="people-grid">
-<a class="person-card" href="julius.html"><div class="person-number">01 / SPORTSFREUNDE</div><div class="person-name">JULIUS</div><div class="person-status">Zum Profil <span class="person-arrow">↗</span></div></a>
-<a class="person-card" href="jovan.html"><div class="person-number">02 / SPORTSFREUNDE</div><div class="person-name">JOVAN</div><div class="person-status">Zum Profil <span class="person-arrow">↗</span></div></a>
+<a class="person-card" href="#jovan"><div class="person-number">01 / SPORTSFREUNDE</div><div class="person-name">JOVAN</div><div class="person-status">Zum Profil <span class="person-arrow">↘</span></div></a>
+<a class="person-card" href="#julius"><div class="person-number">02 / SPORTSFREUNDE</div><div class="person-name">JULIUS</div><div class="person-status">Zum Profil <span class="person-arrow">↘</span></div></a>
 </div>
 </section>
 
+<section id="jovan" class="profile-detail">
+<div class="profile-image"><img src="assets/jovan-portrait.jpeg" alt="Jovan nach einer sportlichen Herausforderung" loading="lazy"></div>
+<div class="profile-copy"><div class="eyebrow">03 / JOVAN</div><h2>JOVAN.</h2><p>Sport war für mich nicht immer selbstverständlich. Nach einer Zeit, in der Gewicht, Selbstbild und mentale Belastung viel Raum eingenommen haben, wurde Bewegung für mich ein neuer Anfang.</p><p>Heute suche ich lange Strecken: Ultracycling, Ultralaufen und die Momente, in denen ich merke, dass ich weiter kann als gedacht.</p><div class="profile-facts"><div class="profile-fact">Alter<strong>18</strong></div><div class="profile-fact">Base<strong>Stockholm</strong></div><div class="profile-fact">Sprache<strong>Deutsch</strong></div></div></div>
+</section>
+
+<section id="julius" class="profile-detail julius">
+<div class="profile-copy"><div class="eyebrow">04 / JULIUS</div><h2>JULIUS.</h2><p>Sport ist für mich Herausforderung und Ausgleich zugleich. Training, lange Läufe und Zeit auf dem Rad helfen mir, mich zu fokussieren und wieder bei mir anzukommen.</p><p>Beim Ultraboss habe ich den 3. Platz in meiner Altersgruppe erreicht. Trotzdem interessiert mich vor allem, was als Nächstes möglich ist.</p><div class="profile-facts"><div class="profile-fact">Alter<strong>19</strong></div><div class="profile-fact">Base<strong>Stockholm</strong></div><div class="profile-fact">Sprache<strong>Deutsch</strong></div></div></div>
+<div class="profile-image"><img src="assets/julius-bike-camp.jpeg" alt="Julius mit seinem Fahrrad beim Bikepacking" loading="lazy"></div>
+</section>
+
 <section id="impact" class="section impact">
-<div class="section-head"><div class="section-no">03 / WIRKUNG</div><div class="section-no">AKTUELLE MISSION</div></div>
+<div class="section-head"><div class="section-no">05 / WIRKUNG</div><div class="section-no">AKTUELLE MISSION</div></div>
 <div class="impact-grid">
 <div><div class="impact-title">Das Ziel ist<br>nicht nur,<br><em>anzukommen.</em></div></div>
 <div class="impact-side">
@@ -66,7 +77,7 @@ footer{background:#0b0b0b;color:#fff;padding:55px 4vw;display:grid;grid-template
 <section class="feature">
 <div class="feature-image"><img src="hero-1.jpeg" alt="Sportsfreunde nach einer Herausforderung"></div>
 <div class="feature-copy">
-<div class="eyebrow">04 / AUSGEWÄHLTE CHALLENGE</div>
+<div class="eyebrow">06 / AUSGEWÄHLTE CHALLENGE</div>
 <h2>1,500 KM.<br>7 DAYS.<br>NORWAY.</h2>
 <p class="intro-copy" style="font-size:17px">Sieben Tage Bikepacking durch Norwegen. Eine Herausforderung, gemessen in Kilometern, Höhenmetern, Wetter, Erschöpfung und der Entscheidung weiterzufahren.</p>
 <div class="stats"><div class="stat"><strong>1,500</strong><span>KM</span></div><div class="stat"><strong>7</strong><span>TAGE</span></div><div class="stat"><strong>NOR</strong><span>NORWEGEN</span></div></div>
@@ -75,22 +86,23 @@ footer{background:#0b0b0b;color:#fff;padding:55px 4vw;display:grid;grid-template
 </section>
 
 <section id="projects" class="section archive">
-<div class="section-head"><div class="section-no">05 / PROJEKTE</div><div class="section-no">DAS ARCHIV</div></div>
+<div class="section-head"><div class="section-no">07 / PROJEKTE</div><div class="section-no">DAS ARCHIV</div></div>
 <div class="project"><div class="project-year">2026</div><div class="project-name">Norway Bikepacking</div><div class="project-meta">1,500 KM / 7 DAYS</div></div>
 <div class="project"><div class="project-year">2026</div><div class="project-name">Ultravasan</div><div class="project-meta">92 KM / TRAIL</div></div>
 <div class="project"><div class="project-year">NÄCHSTES</div><div class="project-name">Demnächst</div><div class="project-meta">DIE NÄCHSTE HERAUSFORDERUNG</div></div>
 </section>
 
 <section id="partners" class="section partners">
-<div class="section-head"><div class="section-no">06 / PARTNER</div><div class="section-no">GEMACHT FÜR ZUSAMMENARBEIT</div></div>
+<div class="section-head"><div class="section-no">08 / PARTNER</div><div class="section-no">GEMACHT FÜR ZUSAMMENARBEIT</div></div>
 <div class="partner-grid">
 <div><h2>Mehr als<br>Reichweite.</h2></div>
-<div><p class="partner-copy">Sportsfreunde gibt Partnern einen Platz in echten Geschichten: Ausdauersport, Abenteuer und ein klarer gesellschaftlicher Anspruch. Hier veröffentlichen wir verifizierte Daten, Kampagnenformate, vergangene Arbeiten und kommende Projekte.</p><div class="facts"><div class="fact">Community <span>Verifizierte Daten</span></div><div class="fact">Reichweite <span>Verifizierte Daten</span></div><div class="fact">Kampagnen <span>Fallstudien folgen</span></div><div class="fact">Kontakt <span>Partnerschaften</span></div></div><a class="button" href="partners.html">Partner werden →</a></div>
+<div><p class="partner-copy">Sportsfreunde gibt Partnern einen Platz in echten Geschichten: Ausdauersport, Abenteuer und ein klarer gesellschaftlicher Anspruch. Hier veröffentlichen wir verifizierte Daten, Kampagnenformate, vergangene Arbeiten und kommende Projekte.</p><div class="facts"><div class="fact">Community <span>Verifizierte Daten</span></div><div class="fact">Reichweite <span>Verifizierte Daten</span></div><div class="fact">Kampagnen <span>Fallstudien folgen</span></div><div class="fact">Kontakt <span>Partnerschaften</span></div></div><a class="button" href="#partner-details">Partner werden →</a></div>
 </div>
+<div id="partner-details" class="partner-detail"><div><p>Als Partner seid ihr Teil von echten Projekten – nicht nur sichtbar am Rand. Wir suchen Zusammenarbeit, die zu unseren Herausforderungen, Geschichten und Werten passt.</p><a class="button" href="mailto:hello@sportsfreunde.jj">Partneranfrage →</a></div><div class="partner-photo"><img src="assets/shared-norway-road.jpeg" alt="Jovan und Julius beim Bikepacking in Norwegen" loading="lazy"></div></div>
 </section>
 
 <section id="contact" class="section">
-<div class="section-head"><div class="section-no">07 / KONTAKT</div><div class="section-no">LASS UNS SPRECHEN</div></div>
+<div class="section-head"><div class="section-no">09 / KONTAKT</div><div class="section-no">LASS UNS SPRECHEN</div></div>
 <div class="intro"><div><h2>Eine Idee?<br>Eine Frage?<br>Schreib uns.</h2></div><div class="intro-copy"><p>Für Partnerschaften, Projekte und allgemeine Anfragen erreichst du uns per E-Mail.</p><a class="button" href="mailto:hello@sportsfreunde.jj">hello@sportsfreunde.jj →</a></div></div>
 </section>
 
