@@ -73,6 +73,7 @@ a{color:inherit;text-decoration:none}
 .profile-hero:after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.76),rgba(0,0,0,.16) 72%),linear-gradient(0deg,rgba(0,0,0,.62),transparent 57%)}
 .profile-hero .hero-photo{position:absolute;z-index:-2;inset:0;min-height:0;background:#111}
 .profile-hero .hero-photo img{filter:saturate(.7) contrast(1.08) brightness(.8)}
+.profile-hero .hero-photo.julius-race-hero img{object-position:50% 36%}
 .profile-hero .hero-copy{position:relative;z-index:1;min-height:100svh;padding:clamp(115px,14vh,175px) 4vw 5vh;max-width:1180px;justify-content:space-between}
 .profile-hero .kicker,.profile-hero .hero-intro,.profile-hero .profile-meta span{color:rgba(255,255,255,.75)}
 .profile-hero .hero-intro{max-width:590px;margin:32px 0 0}
